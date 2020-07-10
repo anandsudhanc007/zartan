@@ -23,18 +23,23 @@ These items need to be downloaded and installed in order to properly run a Zarta
 * (Optional) [Terraform](https://www.terraform.io/downloads.html) to automatically configure your Okta Org
 
 ### Python
-Zartan Requires Python 3.6 or higher to run properly.
+Zartan Requires Python 3.6 or higher to run properly. Check your version of Python using this command:
+```bash
+$ python --version
+Python 3.7.7
+```
+
 * Please refer to your OS specific instructions on installing [Python](https://www.python.org/downloads/)
     * e.g. for Mac users, you can use homebrew:
     ```bash
-    brew install python
+    $ brew install python
     ```
 * You can also leverage services like Heroku and AWS Elastic Beanstalk to run Zartan as well.
 
 
 > ℹ️  Mac users: If you've never run a Python app locally before, your machine is in an unknown state when it comes to Python development. It is a known issue for Python dependencies to have moved, become unlinked or deleted during MacOS upgrades (e.g. an upgrade to Catalina). If you have issues during any of the install steps (below) or when running Zartan locally, try reinstalling Python:
 ```bash
-brew reinstall python
+$ brew reinstall python
 ```
 
 ### Terraform
@@ -43,7 +48,7 @@ We've provided terraform files for easy configuration of the Okta Org. Specific 
 * [Install Terraform](https://learn.hashicorp.com/terraform/getting-started/install#install-terraform) for your OS
     * e.g. for Mac users, you can use homebrew:
     ```
-    brew install terraform
+    $ brew install terraform
     ```
 * Verify terraform is installed correctly by going to the command line/shell, and type the command `terraform version`
     ```bash
@@ -69,15 +74,15 @@ Open up a terminal/shell then:
 4. Activate the `venv` environment: <a name="venv-activate"></a>
     * On Mac/Linux
     ```bash
-    source venv/bin/activate
+    $ source venv/bin/activate
     ```
     * On Windows:
     ```
-    venv\Scripts\activate.bat
+    > venv\Scripts\activate.bat
     ```
 5. Install dependencies
     ```bash
-    pip install -r requirements.txt
+    $ pip install -r requirements.txt
     ```
     NOTE: You may need to run as `pip3 install -r requirements.txt` if you have python 2.7 on your local instance along with python 3.x
 
